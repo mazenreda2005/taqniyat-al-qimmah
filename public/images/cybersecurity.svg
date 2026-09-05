@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#111c44"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#cyberBg)"/>
+
+  <!-- Matrix/Node Mesh Background -->
+  <g opacity="0.15" stroke="#34d399" stroke-width="1">
+    <circle cx="150" cy="150" r="4"/>
+    <circle cx="650" cy="150" r="4"/>
+    <circle cx="200" cy="450" r="4"/>
+    <circle cx="600" cy="450" r="4"/>
+    <circle cx="400" cy="100" r="4"/>
+    <circle cx="400" cy="500" r="4"/>
+    <line x1="150" y1="150" x2="400" y2="100"/>
+    <line x1="650" y1="150" x2="400" y2="100"/>
+    <line x1="150" y1="150" x2="200" y2="450"/>
+    <line x1="650" y1="150" x2="600" y2="450"/>
+    <line x1="200" y1="450" x2="400" y2="500"/>
+    <line x1="600" y1="450" x2="400" y2="500"/>
+  </g>
+
+  <!-- Central Security Shield -->
+  <g filter="url(#glowEffect)">
+    <path d="M400 130 Q520 160 520 280 C520 400 400 470 400 470 C400 470 280 400 280 280 Q280 160 400 130 Z" fill="rgba(16, 185, 129, 0.12)" stroke="url(#glowLine)" stroke-width="4"/>
+  </g>
+
+  <!-- Lock Graphic Inside Shield -->
+  <rect x="360" y="270" width="80" height="70" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+  <path d="M375 270 V245 C375 230 385 220 400 220 C415 220 425 230 425 245 V270" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="400" cy="300" r="8" fill="#34d399"/>
+  <line x1="400" y1="308" x2="400" y2="322" stroke="#34d399" stroke-width="3"/>
+
+  <!-- Pulse Rings -->
+  <circle cx="400" cy="290" r="140" fill="none" stroke="rgba(52, 211, 153, 0.2)" stroke-width="1.5" stroke-dasharray="12 6"/>
+  <circle cx="400" cy="290" r="190" fill="none" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1" stroke-dasharray="20 10"/>
+
+  <text x="400" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="4">CYBERSECURITY &amp; THREAT DEFENSE</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="newGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#newGrad)"/>
+  
+  <!-- Laptop Outline -->
+  <rect x="180" y="120" width="240" height="150" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="3"/>
+  <path d="M 150 270 L 450 270 L 470 290 L 130 290 Z" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+  
+  <text x="300" y="340" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#818cf8" text-anchor="middle">NEW DEVICES &amp; LAPTOPS</text>
+</svg>
