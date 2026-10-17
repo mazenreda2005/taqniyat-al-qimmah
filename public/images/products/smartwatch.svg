@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.10"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g stroke="rgba(255,255,255,0.035)" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+  </g>
+  <ellipse cx="400" cy="275" rx="300" ry="215" fill="url(#halo)"/>
+  <g filter="url(#glow)">
+    <path d="M344 164 L344 96 Q344 80 362 80 L438 80 Q456 80 456 96 L456 164" stroke="url(#neon)" stroke-width="4" fill="#111827"/>
+    <path d="M344 390 L344 458 Q344 474 362 474 L438 474 Q456 474 456 458 L456 390" stroke="url(#neon)" stroke-width="4" fill="#111827"/>
+    <rect x="310" y="158" width="180" height="238" rx="44" stroke="url(#neon)" stroke-width="4" fill="#111827"/>
+    <rect x="328" y="176" width="144" height="202" rx="32" fill="url(#screen)"/>
+    <circle cx="400" cy="277" r="62" stroke="url(#neon)" fill="none" stroke-width="7" opacity="0.28"/>
+    <path d="M400 215 A62 62 0 0 1 455 310" stroke="url(#neon)" fill="none" stroke-width="7" stroke-linecap="round"/>
+    <path d="M400 248 L400 277 L424 292" stroke="url(#neon)" fill="none" stroke-width="4" stroke-linecap="round"/>
+    <rect x="490" y="238" width="12" height="40" rx="6" fill="#1e293b" stroke="url(#neon)" stroke-width="3"/>
+  </g>
+  <ellipse cx="400" cy="498" rx="190" ry="14" fill="#000" opacity="0.30"/>
+  <text x="400" y="534" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="25" font-weight="700" fill="#e2e8f0" text-anchor="middle" letter-spacing="2">SMARTWATCH</text>
+  <text x="400" y="562" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="500" fill="#8b93a7" text-anchor="middle" letter-spacing="3">NEW DEVICES</text>
+</svg>

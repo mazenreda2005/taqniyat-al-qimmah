@@ -13,6 +13,33 @@ A complete Laravel e-commerce web application for buying, selling, and maintaini
 - **Arabic Language Support**: Full RTL support with Arabic translations
 - **Responsive Design**: Works on mobile and desktop devices
 
+<!-- SCREENSHOTS: remove this line and the closing comment marker once the
+     files listed in docs/IMAGES.md exist in docs/screenshots/
+
+## Screenshots
+
+### Storefront
+
+| Home | Products |
+|------|----------|
+| ![Home page](docs/screenshots/01-home.png) | ![Product listing](docs/screenshots/02-products.png) |
+
+| Product details | Cart |
+|-----------------|------|
+| ![Product details](docs/screenshots/03-product-details.png) | ![Shopping cart](docs/screenshots/04-cart.png) |
+
+| Checkout | Maintenance request |
+|----------|---------------------|
+| ![Checkout and payment methods](docs/screenshots/05-checkout.png) | ![Maintenance request form](docs/screenshots/06-maintenance.png) |
+
+### Admin panel
+
+| Dashboard | Product management |
+|-----------|--------------------|
+| ![Admin dashboard](docs/screenshots/07-admin-dashboard.png) | ![Admin product management](docs/screenshots/08-admin-products.png) |
+
+-->
+
 ## Requirements
 
 - PHP >= 8.1

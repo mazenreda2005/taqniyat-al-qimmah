@@ -79,6 +79,14 @@ class DatabaseSeeder extends Seeder
             ],
         ];
 
+        // صور المنتجات حسب الفئة - الملفات موجودة في public/images/products
+        $productImages = [
+            'new-devices' => ['laptop-pro', 'smartphone-5g', 'tablet-air', 'workstation', 'smartwatch'],
+            'used-devices' => ['used-laptop', 'used-smartphone', 'used-monitor', 'used-tablet', 'used-printer'],
+            'accessories' => ['headphones', 'wireless-mouse', 'mech-keyboard', 'power-bank', 'usb-drive'],
+            'cameras' => ['dslr-camera', 'action-camera', 'cctv-camera', 'webcam-4k', 'drone-camera'],
+        ];
+
         foreach ($categories as $categoryData) {
             $category = Category::create($categoryData);
 
@@ -96,7 +104,9 @@ class DatabaseSeeder extends Seeder
                         'condition' => $category->slug === 'used-devices' ? 'used' : 'new',
                         'stock' => rand(5, 50),
                         'is_available' => true,
-                        'images' => null,
+                        'images' => isset($productImages[$category->slug][$i - 1])
+                            ? ['/images/products/' . $productImages[$category->slug][$i - 1] . '.svg']
+                            : null,
                         'is_featured' => $i <= 2, // أول منتجين من كل فئة يظهران في السلايدر
                         'featured_order' => $i,
                     ]);

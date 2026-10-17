@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.10"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g stroke="rgba(255,255,255,0.035)" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+  </g>
+  <ellipse cx="400" cy="275" rx="300" ry="215" fill="url(#halo)"/>
+  <g filter="url(#glow)">
+    <path d="M342 232 L218 156" stroke="url(#neon)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <ellipse cx="218" cy="156" rx="76" ry="9" fill="url(#neon)" opacity="0.28"/>
+    <circle cx="218" cy="156" r="26" fill="#111827" stroke="url(#neon)" stroke-width="4"/>
+    <path d="M458 232 L582 156" stroke="url(#neon)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <ellipse cx="582" cy="156" rx="76" ry="9" fill="url(#neon)" opacity="0.28"/>
+    <circle cx="582" cy="156" r="26" fill="#111827" stroke="url(#neon)" stroke-width="4"/>
+    <path d="M342 316 L218 392" stroke="url(#neon)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <ellipse cx="218" cy="392" rx="76" ry="9" fill="url(#neon)" opacity="0.28"/>
+    <circle cx="218" cy="392" r="26" fill="#111827" stroke="url(#neon)" stroke-width="4"/>
+    <path d="M458 316 L582 392" stroke="url(#neon)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <ellipse cx="582" cy="392" rx="76" ry="9" fill="url(#neon)" opacity="0.28"/>
+    <circle cx="582" cy="392" r="26" fill="#111827" stroke="url(#neon)" stroke-width="4"/>
+    <rect x="312" y="210" width="176" height="128" rx="30" stroke="url(#neon)" stroke-width="4" fill="#111827"/>
+    <rect x="332" y="230" width="136" height="68" rx="14" fill="url(#screen)"/>
+    <circle cx="400" cy="372" r="42" fill="#0b1220" stroke="url(#neon)" stroke-width="4"/>
+    <circle cx="400" cy="372" r="22" fill="url(#screen)" stroke="url(#neon)" stroke-width="3"/>
+    <circle cx="392" cy="364" r="7" fill="#e2e8f0" opacity="0.4"/>
+    <circle cx="352" cy="264" r="9" fill="#4ade80"/>
+    <circle cx="448" cy="264" r="9" fill="#f87171"/>
+  </g>
+  <ellipse cx="400" cy="498" rx="190" ry="14" fill="#000" opacity="0.30"/>
+  <text x="400" y="534" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="25" font-weight="700" fill="#e2e8f0" text-anchor="middle" letter-spacing="2">CAMERA DRONE</text>
+  <text x="400" y="562" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13" font-weight="500" fill="#8b93a7" text-anchor="middle" letter-spacing="3">CAMERAS</text>
+</svg>

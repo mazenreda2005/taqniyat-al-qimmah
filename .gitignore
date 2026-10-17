@@ -16,4 +16,19 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-notepad .gitignore
+
+# Local databases - run `php artisan migrate --seed` to recreate
+database/*.sqlite
+database/*.sqlite-journal
+
+# Runtime files Laravel regenerates
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/app/public/*
+!.gitkeep
+
+# Editor / tooling
+/.claude
+/.cursor
