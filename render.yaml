@@ -1,0 +1,38 @@
+# Render Blueprint - lets Render configure the service automatically.
+# See: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: taqniyat-al-qimmah
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: frankfurt
+    healthCheckPath: /
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_LOCALE
+        value: ar
+      - key: APP_FALLBACK_LOCALE
+        value: en
+      # Keeps sessions valid across restarts. Generate with:
+      #   php artisan key:generate --show
+      - key: APP_KEY
+        sync: false
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: /app/database/database.sqlite
+      - key: SESSION_DRIVER
+        value: database
+      - key: CACHE_STORE
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
+      # Render collects stdout/stderr, so log there instead of to a file.
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: LOG_LEVEL
+        value: error

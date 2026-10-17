@@ -33,7 +33,7 @@
                             <label class="form-label">{{ __('Image') }}</label>
                             @if($category->image)
                             <div class="mb-2">
-                                <img src="{{ asset('storage/' . $category->image) }}" alt="{{ $category->name }}" style="max-height: 100px;">
+                                <img src="{{ $category->image_url }}" alt="{{ $category->name }}" style="max-height: 100px;">
                             </div>
                             @endif
                             <input type="file" name="image" class="form-control" accept="image/*">

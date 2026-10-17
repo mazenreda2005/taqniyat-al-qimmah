@@ -30,6 +30,17 @@ return [
             'days' => 14,
             'replace_placeholders' => true,
         ],
+        // Container hosts (Render, Fly, Railway) collect stdout/stderr instead
+        // of reading log files, which are wiped on every restart.
+        'stderr' => [
+            'driver' => 'monolog',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'handler' => StreamHandler::class,
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+        ],
         'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,

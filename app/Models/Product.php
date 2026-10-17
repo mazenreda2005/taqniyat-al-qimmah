@@ -102,16 +102,25 @@ class Product extends Model
         return $this->description_en;
     }
 
+    /**
+     * Resolve a single stored image path to a usable URL.
+     * Absolute URLs and root-relative paths (images shipped in public/) are
+     * returned untouched; anything else is treated as an upload in storage/.
+     */
+    public function imageUrl($path)
+    {
+        if (empty($path)) {
+            return asset('images/default-product.svg');
+        }
+        if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://') || str_starts_with($path, '/')) {
+            return $path;
+        }
+        return asset('storage/' . $path);
+    }
+
     public function getMainImageAttribute()
     {
         $images = $this->images ?? [];
-        if (!empty($images) && !empty($images[0])) {
-            $first = $images[0];
-            if (str_starts_with($first, 'http://') || str_starts_with($first, 'https://') || str_starts_with($first, '/')) {
-                return $first;
-            }
-            return asset('storage/' . $first);
-        }
-        return asset('images/default-product.svg');
+        return $this->imageUrl($images[0] ?? null);
     }
 }
