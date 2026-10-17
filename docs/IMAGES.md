@@ -8,19 +8,19 @@ Drop screenshots of the running site here, using exactly these names:
 
 | File | Page to capture | الصفحة |
 |------|-----------------|--------|
-| `docs/screenshots/01-home.png` | Landing page | الصفحة الرئيسية |
-| `docs/screenshots/02-products.png` | Product listing with categories | قائمة المنتجات |
-| `docs/screenshots/03-product-details.png` | Single product page | تفاصيل المنتج |
-| `docs/screenshots/04-cart.png` | Shopping cart | سلة الشراء |
-| `docs/screenshots/05-checkout.png` | Checkout / payment methods | الدفع |
-| `docs/screenshots/06-maintenance.png` | Maintenance request form | طلب الصيانة |
-| `docs/screenshots/07-admin-dashboard.png` | Admin dashboard with stats | لوحة التحكم |
-| `docs/screenshots/08-admin-products.png` | Admin product management | إدارة المنتجات |
+| `docs/screenshots/01-home.jpg` | Landing page | الصفحة الرئيسية |
+| `docs/screenshots/02-products.jpg` | Product listing with categories | قائمة المنتجات |
+| `docs/screenshots/03-product-details.jpg` | Single product page | تفاصيل المنتج |
+| `docs/screenshots/04-cart.jpg` | Shopping cart | سلة الشراء |
+| `docs/screenshots/05-checkout.jpg` | Checkout / payment methods | الدفع |
+| `docs/screenshots/06-maintenance.jpg` | Maintenance request form | طلب الصيانة |
+| `docs/screenshots/07-admin-dashboard.jpg` | Admin dashboard with stats | لوحة التحكم |
+| `docs/screenshots/08-admin-products.jpg` | Admin product management | إدارة المنتجات |
 
 Capture tips:
 - Browser at ~1440px wide, browser chrome excluded if possible.
 - Log out of any personal accounts first — screenshots land in a public repo.
-- PNG, and keep each under ~500 KB so the repo stays light.
+- JPG or PNG, and keep each under ~500 KB so the repo stays light.
 
 Once the files are in place, the Screenshots section of the main `README.md`
 displays them automatically.

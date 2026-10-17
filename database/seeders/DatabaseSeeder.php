@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'),
             'role' => 'admin',
             'phone' => '0500000000',
+            // Without this the demo account is stuck on the verify-email screen.
+            'email_verified_at' => now(),
         ]);
 
         // Create Test User
@@ -28,6 +30,7 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'),
             'role' => 'user',
             'phone' => '0500000001',
+            'email_verified_at' => now(),
         ]);
 
         // Create Categories

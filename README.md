@@ -13,32 +13,27 @@ A complete Laravel e-commerce web application for buying, selling, and maintaini
 - **Arabic Language Support**: Full RTL support with Arabic translations
 - **Responsive Design**: Works on mobile and desktop devices
 
-<!-- SCREENSHOTS: remove this line and the closing comment marker once the
-     files listed in docs/IMAGES.md exist in docs/screenshots/
-
 ## Screenshots
 
 ### Storefront
 
 | Home | Products |
 |------|----------|
-| ![Home page](docs/screenshots/01-home.png) | ![Product listing](docs/screenshots/02-products.png) |
+| ![Home page](docs/screenshots/01-home.jpg) | ![Product listing](docs/screenshots/02-products.jpg) |
 
 | Product details | Cart |
 |-----------------|------|
-| ![Product details](docs/screenshots/03-product-details.png) | ![Shopping cart](docs/screenshots/04-cart.png) |
+| ![Product details](docs/screenshots/03-product-details.jpg) | ![Shopping cart](docs/screenshots/04-cart.jpg) |
 
 | Checkout | Maintenance request |
 |----------|---------------------|
-| ![Checkout and payment methods](docs/screenshots/05-checkout.png) | ![Maintenance request form](docs/screenshots/06-maintenance.png) |
+| ![Checkout and payment methods](docs/screenshots/05-checkout.jpg) | ![Maintenance request form](docs/screenshots/06-maintenance.jpg) |
 
 ### Admin panel
 
 | Dashboard | Product management |
 |-----------|--------------------|
-| ![Admin dashboard](docs/screenshots/07-admin-dashboard.png) | ![Admin product management](docs/screenshots/08-admin-products.png) |
-
--->
+| ![Admin dashboard](docs/screenshots/07-admin-dashboard.jpg) | ![Admin product management](docs/screenshots/08-admin-products.jpg) |
 
 ## Requirements
 

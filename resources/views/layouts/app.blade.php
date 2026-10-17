@@ -29,14 +29,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
     @endif
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - load exactly one build. Loading both applies the LTR
+         and RTL negative margins together, which pushes carousel slides
+         out of view. -->
     @if($isRtl)
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    @else
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     @endif
 
     <!-- Modern App Styles -->
     <style>
+        /* The Vite bundle ships LTR Bootstrap while the CDN serves the RTL
+           build, so a carousel slide inherits both negative margins and is
+           pushed outside its clipped container. Keep only the RTL one. */
+        [dir="rtl"] .carousel-item { float: right; margin-left: -100%; margin-right: 0; }
+
         :root {
             --primary-glow: #6366f1;
             --cyber-green: #10b981;
